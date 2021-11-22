@@ -47,7 +47,7 @@
 				<td><a href="https://joinmastodon.org">Mastodon</a></td>
 				<td>None</td>
 				<td />
-				<td class="yes">Yes<sup>5</sup></td>
+				<td class="yesish">Partial<sup>5</sup></td>
 				<td class="yes">Yes</td>
 				<td />
 				<td class="old">rsa-sha256</td>
@@ -57,7 +57,7 @@
 				<td><a href="https://pleroma.social">Pleroma</a></td>
 				<td><a href="https://git.pleroma.social/pleroma/elixir-libraries/http_signatures">pleroma/http_signatures</a></td>
 				<td />
-				<td class="yesish">Yes<sup>1</sup></td>
+				<td class="yesish">Partial<sup>1</sup></td>
 				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
@@ -65,12 +65,12 @@
 			</tr>
 			<tr>
 				<td><a href="https://joinpeertube.org">PeerTube</a></td>
-				<td><a href="https://www.npmjs.com/package/http-signature">http-signature</a></td>
+				<td><a href="https://www.npmjs.com/package/@peertube/http-signature">@peertube/http-signature</a></td>
 				<td />
-				<td class="no">
-					No - <a href="https://github.com/joyent/node-http-signature/issues/106">Issue</a>
+				<td class="yesish">
+					Partial<sup>7</sup>
 				</td>
-				<td class="yesish">Yes</td>
+				<td class="yes">Yes</td>
 				<td />
 				<td class="old">rsa-sha256</td>
 				<td class="old">No</td>
@@ -89,7 +89,7 @@
 				<td><a href="https://pixelfed.org/">Pixelfed</a></td>
 				<td>None</td>
 				<td />
-				<td class="yesish">Yes<sup>1</sup></td>
+				<td class="yesish">Partial<sup>1</sup></td>
 				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
@@ -112,7 +112,7 @@
 				<td>None</td>
 				<td />
 				<td class="yesish">
-					Yes<sup>5</sup>
+					Partial<sup>5</sup>
 				</td>
 				<td class="no">
 					No - <a href="https://github.com/friendica/friendica/issues/8845">Issue</a>
@@ -125,8 +125,8 @@
 				<td><a href="https://zotlabs.org/page/hubzilla/hubzilla-project">Hubzilla</a></td>
 				<td>None</td>
 				<td />
-				<td class="yes">
-					Yes<sup>2</sup>
+				<td class="yesish">
+					Partial<sup>2</sup>
 				</td>
 				<td class="no">No</td>
 				<td />
@@ -152,7 +152,7 @@
 				<td><a href="https://joinplu.me/">Plume</a></td>
 				<td>None</td>
 				<td />
-				<td class="yesish">Yes<sup>1</sup></td>
+				<td class="yesish">Partial<sup>1</sup></td>
 				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
@@ -162,7 +162,7 @@
 				<td><a href="https://joinmobilizon.org">Mobilizon</a></td>
 				<td><a href="https://git.pleroma.social/pleroma/elixir-libraries/http_signatures">pleroma/http_signatures</a></td>
 				<td />
-				<td class="yesish">Yes<sup>1</sup></td>
+				<td class="yesish">Partial<sup>1</sup></td>
 				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
@@ -172,7 +172,7 @@
 				<td><a href="https://sr.ht/~vpzom/lotide/">lotide</a></td>
 				<td><a href="https://crates.io/crates/hancock">hancock</a></td>
 				<td />
-				<td class="yes">Yes<sup>6</sup></td>
+				<td class="yesish">Maybe<sup>6</sup></td>
 				<td class="yes">Yes</td>
 				<td />
 				<td class="yes">hs2019</td>
@@ -198,6 +198,9 @@
 			</li>
 			<li>
 				<sup>6</sup> This implementation technically supports signature algorithm derivation, but given that it's the only one, this is not a standard
+			</li>
+			<li>
+				<sup>7</sup> This implementation assumes "hs2019" is equivalent to "rsa-sha512"
 			</li>
 		</ul>
 	</body>
