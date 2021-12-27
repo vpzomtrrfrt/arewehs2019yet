@@ -33,15 +33,17 @@
 				<th rowspan="2">Service</th>
 				<th rowspan="2">Library</th>
 				<td rowspan="2" class="sep"></td>
-				<th colspan="2">Accepts</th>
+				<th colspan="3">Accepts</th>
 				<td rowspan="2" class="sep"></td>
-				<th colspan="2">Sends</th>
+				<th colspan="3">Sends</th>
 			</tr>
 			<tr>
 				<th>algorithm="hs2019"</th>
 				<th>(created) &amp; (expires)</th>
+				<th>Signature-Input</th>
 				<th>algorithm</th>
 				<th>(created) &amp; (expires)</th>
+				<th>Signature-Input</th>
 			</tr>
 			<tr>
 				<td><a href="https://joinmastodon.org">Mastodon</a></td>
@@ -49,8 +51,10 @@
 				<td />
 				<td class="yesish">Partial<sup>5</sup></td>
 				<td class="yes">Yes</td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -59,8 +63,10 @@
 				<td />
 				<td class="yesish">Partial<sup>1</sup></td>
 				<td class="no">No</td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -71,8 +77,10 @@
 					Partial<sup>7</sup>
 				</td>
 				<td class="yes">Yes</td>
+				<td class="no">No - <a href="https://github.com/joyent/node-http-signature/issues/118">Issue</a></td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -81,8 +89,10 @@
 				<td />
 				<td class="no">No - <a href="https://github.com/spacemonkeygo/httpsig/issues/7">Issue</a></td>
 				<td class="no">No</td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -91,8 +101,10 @@
 				<td />
 				<td class="yesish">Partial<sup>1</sup></td>
 				<td class="no">No</td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -103,8 +115,10 @@
 					No - <a href="https://github.com/joyent/node-http-signature/issues/106">Issue</a>
 				</td>
 				<td class="yes">Yes</td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -117,8 +131,10 @@
 				<td class="no">
 					No - <a href="https://github.com/friendica/friendica/issues/8845">Issue</a>
 				</td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -129,8 +145,10 @@
 					Partial<sup>2</sup>
 				</td>
 				<td class="no">No</td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -144,8 +162,10 @@
 				<td />
 				<td class="no">No</td>
 				<td class="no">No<sup>4</sup></td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -154,8 +174,10 @@
 				<td />
 				<td class="yesish">Partial<sup>1</sup></td>
 				<td class="no">No</td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -164,8 +186,10 @@
 				<td />
 				<td class="yesish">Partial<sup>1</sup></td>
 				<td class="no">No</td>
+				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -174,8 +198,10 @@
 				<td />
 				<td class="yesish">Maybe<sup>6</sup></td>
 				<td class="yes">Yes</td>
+				<td class="no">No</td>
 				<td />
 				<td class="yes">hs2019</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 		</table>
