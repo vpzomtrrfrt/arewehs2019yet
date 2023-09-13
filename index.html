@@ -62,7 +62,7 @@
 				<td><a href="https://git.pleroma.social/pleroma/elixir-libraries/http_signatures">pleroma/http_signatures</a></td>
 				<td />
 				<td class="yesish">Partial<sup>1</sup></td>
-				<td class="no">No</td>
+				<td class="no">No - <a href="https://git.pleroma.social/pleroma/elixir-libraries/http_signatures/-/issues/2">Issue</a></td>
 				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
@@ -74,7 +74,7 @@
 				<td><a href="https://www.npmjs.com/package/@peertube/http-signature">@peertube/http-signature</a></td>
 				<td />
 				<td class="yesish">
-					Partial<sup>7</sup>
+					Partial<sup>3</sup>
 				</td>
 				<td class="yes">Yes</td>
 				<td class="no">No - <a href="https://github.com/joyent/node-http-signature/issues/118">Issue</a></td>
@@ -109,13 +109,13 @@
 			</tr>
 			<tr>
 				<td><a href="https://join.misskey.page/">Misskey</a></td>
-				<td><a href="https://www.npmjs.com/package/http-signature">http-signature</a></td>
+				<td><a href="https://www.npmjs.com/package/@peertube/http-signature">@peertube/http-signature</a></td>
 				<td />
-				<td class="no">
-					No - <a href="https://github.com/joyent/node-http-signature/issues/106">Issue</a>
+				<td class="yesish">
+					Partial<sup>3</sup>
 				</td>
 				<td class="yes">Yes</td>
-				<td class="no">No</td>
+				<td class="no">No - <a href="https://github.com/joyent/node-http-signature/issues/118">Issue</a></td>
 				<td />
 				<td class="old">rsa-sha256</td>
 				<td class="old">No</td>
@@ -154,14 +154,13 @@
 			<tr>
 				<td><a href="https://funkwhale.audio/">Funkwhale</a></td>
 				<td>
-					<a href="https://github.com/EliotBerriot/requests-http-signature/tree/signature-header-support">
-						EliotBerriot/requests-http-signature#signature-header-support
+					<a href="https://pypi.org/project/requests-http-message-signatures/">
+						requests-http-message-signatures
 					</a>
-					<sup>3</sup>
 				</td>
 				<td />
-				<td class="no">No</td>
-				<td class="no">No<sup>4</sup></td>
+				<td class="yesish">Partial<sup>2</sup></td>
+				<td class="yes">Yes</td>
 				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
@@ -185,7 +184,7 @@
 				<td><a href="https://git.pleroma.social/pleroma/elixir-libraries/http_signatures">pleroma/http_signatures</a></td>
 				<td />
 				<td class="yesish">Partial<sup>1</sup></td>
-				<td class="no">No</td>
+				<td class="no">No - <a href="https://git.pleroma.social/pleroma/elixir-libraries/http_signatures/-/issues/2">Issue</a></td>
 				<td class="no">No</td>
 				<td />
 				<td class="old">rsa-sha256</td>
@@ -201,7 +200,7 @@
 				<td class="no">No</td>
 				<td />
 				<td class="yes">hs2019</td>
-				<td class="yes">Yes</td>
+				<td class="old">No</td>
 				<td class="old">No</td>
 			</tr>
 			<tr>
@@ -222,7 +221,7 @@
 				<td />
 				<td class="yesish">Maybe<sup>6</sup></td>
 				<td class="yes">Yes</td>
-				<td class="no">No</td>
+				<td class="no">No - <a href="https://todo.sr.ht/~vpzom/lotide/179">Issue</a></td>
 				<td />
 				<td class="yes">hs2019</td>
 				<td class="old">No</td>
@@ -236,8 +235,7 @@
 				but falls back to SHA256 if unrecognized, which technically works for current uses of hs2019
 			</li>
 			<li>
-				<sup>3</sup> Temporary fork, see
-				<a href="https://dev.funkwhale.audio/funkwhale/funkwhale/-/issues/876">this issue</a>
+				<sup>3</sup> This implementation assumes "hs2019" is equivalent to "rsa-sha512"
 			</li>
 			<li>
 				<sup>4</sup> Implemented in upstream library, but not released yet
@@ -248,9 +246,6 @@
 			</li>
 			<li>
 				<sup>6</sup> This implementation technically supports signature algorithm derivation, but given that it's the only one, this is not a standard
-			</li>
-			<li>
-				<sup>7</sup> This implementation assumes "hs2019" is equivalent to "rsa-sha512"
 			</li>
 		</ul>
 	</body>
