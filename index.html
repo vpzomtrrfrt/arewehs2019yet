@@ -304,6 +304,21 @@
 				<td class="old">No</td>
 				<td class="old">No<sup>4</sup></td>
 			</tr>
+			<tr>
+				<td>
+					<a href="https://codeberg.org/silverpill/mitra">Mitra</a>
+					<span class="version">4.12.0</span>
+				</td>
+				<td><a href="https://crates.io/crates/apx_sdk">apx_sdk</a></td>
+				<td />
+				<td class="yesish">Partial<sup>3</sup></td>
+				<td class="yes">Yes</td>
+				<td class="yes">Yes</td>
+				<td />
+				<td class="old">rsa-sha256</td>
+				<td class="old">No</td>
+				<td class="old">No</td>
+			</tr>	
 		</table>
 		<ul>
 			<li><sup>1</sup> This implementation assumes all signatures use SHA256</li>
@@ -311,6 +326,7 @@
 				<sup>2</sup> This implementation uses the passed algorithm if known (not recommended by the spec),
 				but falls back to SHA256 if unrecognized, which technically works for current uses of hs2019
 			</li>
+			<li><sup>3</sup> This implementation assumes all RSA signatures use SHA256</li>
 			<li>
 				<sup>4</sup> Available as config option
 			</li>
